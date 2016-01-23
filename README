@@ -1,0 +1,10 @@
+Bobbys Shell Scripts
+====================
+
+This is a collection of useful, and not so useful, shell scripts for Linux
+and similar UNIX systems.
+
+I'll try to make sure that they work under a generic shell, however, from time
+to time it might be necessary to resort to Bash features. I will try to make
+that clear in the shebang line.
+
