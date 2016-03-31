@@ -32,7 +32,7 @@ vlc \
 	":v4l2-contrast=60" \
 	":live-caching=99" \
 	":v4l2-input=1" \
-	":v4l2-aspect-ratio=16\:9"
+	":v4l2-aspect-ratio=16\:9" \
 	--aspect-ratio 16:9 \
 	--deinterlace 1 \
 	--deinterlace-mode "Discard"
