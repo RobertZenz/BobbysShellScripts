@@ -11,7 +11,7 @@
 
 script_start="#!/usr/bin/env sh
 
-. \"\$(dirname \"\$0\")/base.sh\"
+export WINEPREFIX=\"\$(dirname \"\$(readlink -f \"\$0\")\")\"
 "
 
 _create_script() {
@@ -19,11 +19,6 @@ _create_script() {
 	chmod u+x "$1"
 }
 
-
-_create_script "base.sh" "#!/usr/bin/env sh
-
-export WINEPREFIX=\"$(pwd)\"
-"
 
 _create_script "cfg.sh" "$script_start
 winecfg
